@@ -1,24 +1,26 @@
 {
-  "name": "flood-end",
+  "name": "flood-control-dashboard",
+  "private": true,
   "version": "1.0.0",
-  "description": "Smart Flood Control backend and dashboard",
-  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "dev:api": "node server.js",
-    "dev:dashboard": "cd dashboard && npm run dev",
-    "build:dashboard": "cd dashboard && npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
   "dependencies": {
-    "@google/generative-ai": "^0.24.1",
-    "@supabase/supabase-js": "^2.98.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.3.1",
-    "express": "^4.21.0"
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "recharts": "^2.12.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.8",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.18",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "vite": "^5.1.4"
   }
 }
